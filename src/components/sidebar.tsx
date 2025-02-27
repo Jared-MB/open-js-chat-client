@@ -11,14 +11,16 @@ export function Sidebar() {
 			<aside className="hidden md:flex md:w-96 flex-col border-r bg-background h-dvh">
 				<header className="p-4 flex items-center justify-between h-20 border-b">
 					<h1 className="text-xl font-bold flex items-center gap-2">
-						<Link
-							href="https://github.com/Jared-MB/open-js-chat-client"
-							target="_blank"
-							rel="noreferrer noopener"
-						>
-							<Github />
-						</Link>
-						Open JS Chat
+						<Button asChild size="icon" variant="outline">
+							<Link
+								href="https://github.com/Jared-MB/open-js-chat-client"
+								target="_blank"
+								rel="noreferrer noopener"
+							>
+								<Github />
+							</Link>
+						</Button>
+						OpenJS Chat <small className="text-xs">(Client)</small>
 					</h1>
 					<Button variant="ghost" size="icon">
 						<MoreVertical className="h-5 w-5" />
