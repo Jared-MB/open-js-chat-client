@@ -48,6 +48,7 @@ export function InputMessage() {
 			</Button>
 			<Input
 				className="flex-1"
+				autoFocus
 				placeholder="Escribe un mensaje..."
 				value={input}
 				onChange={(e) => setInput(e.target.value)}
